@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>И.П Марченко – Ритуальные услуги | Достойное сопровождение</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+</head>
+<body>
+    <!-- Header -->
+    <header>
+    <div class="header-content container">
+        <div class="header-logo">
+            <img src="img/logo.png" alt="Логотип" class="header-logo-img">
+            <div class="header-logo-text">
+                <div class="header-logo-text-line1">И.П Марченко</div>
+                <div class="header-logo-text-line2">РИТУАЛЬНЫЕ УСЛУГИ</div>
+            </div>
+        </div>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <nav>
+                    <ul>
+                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="#catalog">Каталог</a></li>
+                        <li><a href="#prices">Цены</a></li>
+                        <li><a href="#news">Новости</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>Достойное сопровождение в трудный момент</h2>
+            <p>Профессиональная организация ритуальных услуг с уважением, тактом и вниманием к деталям</p>
+            <a href="#contacts" class="btn">Связаться с нами</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Наши услуги</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <h3>Оформление документов</h3>
+                    <p>Помощь в получении всех необходимых документов и справок</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hands"></i>
+                    </div>
+                    <h3>Подготовка тела</h3>
+                    <p>Бережная подготовка и облачение с соблюдением традиций</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-car-side"></i>
+                    </div>
+                    <h3>Транспортные услуги</h3>
+                    <p>Катафальные перевозки и организация транспорта для родственников</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>Ритуальные товары</h3>
+                    <p>Гробы, венки, одежда и все необходимые принадлежности для погребения</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-church"></i>
+                    </div>
+                    <h3>Организация церемонии</h3>
+                    <p>Проведение прощальных обрядов согласно вашим традициям</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Организация поминок</h3>
+                    <p>Подбор и бронирование залов, организация поминальных обедов</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-monument"></i>
+                    </div>
+                    <h3>Благоустройство</h3>
+                    <p>Производство памятников и оград</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Психологическая поддержка</h3>
+                    <p>Помощь и консультации в трудный период</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Catalog Section -->
+    <section id="catalog" class="catalog">
+        <div class="container">
+            <div class="section-title">
+                <h2>Каталог товаров</h2>
+            </div>
+            <div class="catalog-grid">
+                <!-- Памятники -->
+                <div class="catalog-item" onclick="openCatalogModal('monuments')" data-category="monuments">
+                    <div class="item-image">
+                        <i class="fas fa-monument"></i>
+                    </div>
+                    <div class="item-name">Памятники</div>
+                    <div class="catalog-click-hint">
+                        <i class="fas fa-expand"></i> Посмотреть каталог
+                    </div>
+                </div>
+                
+                <!-- Ограды -->
+                <div class="catalog-item" onclick="openCatalogModal('fences')" data-category="fences">
+                    <div class="item-image">
+                        <i class="fas fa-border-all"></i>
+                    </div>
+                    <div class="item-name">Ограды</div>
+                    <div class="catalog-click-hint">
+                        <i class="fas fa-expand"></i> Посмотреть каталог
+                    </div>
+                </div>
+                
+                <!-- Венки и цветы -->
+                <div class="catalog-item" onclick="openCatalogModal('wreaths')" data-category="wreaths">
+                    <div class="item-image">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <div class="item-name">Венки и цветы</div>
+                    <div class="catalog-click-hint">
+                        <i class="fas fa-expand"></i> Посмотреть каталог
+                    </div>
+                </div>
+                
+                <!-- Гробы -->
+                <div class="catalog-item" onclick="openCatalogModal('coffins')" data-category="coffins">
+                    <div class="item-image">
+                        <i class="fas fa-box"></i>
+                    </div>
+                    <div class="item-name">Гробы</div>
+                    <div class="catalog-click-hint">
+                        <i class="fas fa-expand"></i> Посмотреть каталог
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prices Section -->
+    <section id="prices" class="prices">
+        <div class="container">
+            <div class="section-title">
+                <h2>Цены</h2>
+            </div>
+            <p class="price-note">Итоговая сумма зависит от конкретного заказа. Указаны базовые цены.</p>
+            <table class="price-table">
+                <thead>
+                    <tr>
+                        <th>Услуга / Товар</th>
+                        <th>Стоимость (от)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Полная организация похорон + услуги</td>
+                        <td>от 45.000р</td>
+                    </tr>
+                    <tr>
+                        <td>Памятники</td>
+                        <td>от 10.000р</td>
+                    </tr>
+                    <tr>
+                        <td>Венки</td>
+                        <td>от 400р</td>
+                    </tr>
+                    <tr>
+                        <td>Ограды</td>
+                        <td>от 7.000р</td>
+                    </tr>
+                    <tr>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news" class="news">
+        <div class="container">
+            <div class="section-title">
+                <h2>Новость</h2>
+            </div>
+            <div class="news-card">
+                <div class="news-badge">Новое!</div>
+                <h3 class="news-title">Открытие ритуального зала в Шербакульском районе</h3>
+                <p class="news-date">Декабрь 2023</p>
+                <div class="news-content">
+                    <p class="news-intro">Уважаемые жители Шербакульского района!<br>
+                    В нашем районе открылся новый ритуальный зал по адресу <strong>ул. Берёзовая, д. 53</strong>.</p>
+                    
+                    <div class="news-features">
+                        <div class="feature-column">
+                            <h4>Ритуальный зал предоставляет:</h4>
+                            <ul>
+                                <li>Просторный прощальный зал с возможностью предоставления услуг церкви (отпевание)</li>
+                                <li>Помещение холодного хранения усопшего</li>
+                                <li>Магазин с сопутствующими ритуальными товарами</li>
+                            </ul>
+                        </div>
+                        <div class="feature-column">
+                            <h4>Предоставляются услуги:</h4>
+                            <ul>
+                                <li>Доставка усопшего</li>
+                                <li>Омовение и хранение усопшего</li>
+                                <li>Прощание с усопшим</li>
+                                <li>Организация захоронения</li>
+                                <li>Оформление места захоронения</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="news-contact">
+                        <p>📞 <strong>За дополнительной информацией обращайтесь по телефонам:</strong><br>
+                        8-908-115-33-26, 8-913-607-58-73</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacts Section -->
+    <section id="contacts" class="contacts">
+        <div class="container">
+            <div class="section-title">
+                <h2>Контакты</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>mapiina@bk.ru</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Телефоны</h3>
+                            <p>8-908-115-33-26</p>
+                            <p>8-913-607-58-73</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Режим работы</h3>
+                            <p>Круглосуточно. Без выходных.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <iframe id="map_346922105" frameborder="0" width="100%" height="600px" src="https://makemap.2gis.ru/widget?data=eJw1kM1uwjAQhN9le2wEJg7YicShStX0h6IEqapoxSHC29SSE0eOaQuId2eTqHucmR19u2ewTqFDlaGt0TuNHSSfZ_DHFiGBByz9wSEE0DrbovODT7b2pvfZ87To1qlk2-mm8tkrBRV2e6dbr21Dgfzx7pa93BeHdZaybd6HBdueih-VrdjqrSJtU6leIy9OozyNf_NquaSivTXWUcWNisovLkg5PTUK_yCZsf-5BFCN4McBa6TOrW780EDH6ab0w1EinPB4wQUP5tFkwWdM8h3tawWJFPPLLoC6bHPb6RH9DKb0kAxZJmPBOFtIHoUBmN4e20QspQiFZJLorK2JTVInfcAa8_6NaD4G1bsDXq6gw28J" sandbox="allow-modals allow-forms allow-scripts allow-same-origin allow-popups allow-top-navigation-by-user-activation"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo-icon"><img src="img/logo.png" alt="Логотип" class="footer-logo"></div>
+                    <h3>И.П Марченко</h3>
+                    <p>Ритуальные услуги</p>
+                </div>
+                
+                <div class="footer-contacts">
+                    <h4>Контакты</h4>
+                    <p>📞 8-908-115-33-26</p>
+                    <p>📞 8-913-607-58-73</p>
+                    <p>✉️ mapiina@bk.ru</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Навигация</h4>
+                    <a href="#services">Услуги</a>
+                    <a href="#catalog">Каталог</a>
+                    <a href="#prices">Цены</a>
+                    <a href="#news">Новости</a>
+                    <a href="#contacts">Контакты</a>
+                </div>
+                
+                <div class="footer-hours">
+                    <h4>Режим работы</h4>
+                    <p>Круглосуточно</p>
+                    <p>Без выходных</p>
+                    <p>Экстренные вызовы - 24/7</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">© 2025 И.П Марченко – Ритуальные услуги. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('active');
+        });
+        
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', function() {
+                document.querySelector('nav ul').classList.remove('active');
+            });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+         // Функции для модальных окон каталога
+        function openCatalogModal(categoryId) {
+            const modal = document.getElementById('catalog-' + categoryId);
+            if (modal) {
+                modal.style.display = 'block';
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function closeCatalogModal(categoryId) {
+            const modal = document.getElementById('catalog-' + categoryId);
+            if (modal) {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        // Добавьте этот код в существующий DOMContentLoaded обработчик
+        document.addEventListener('DOMContentLoaded', function() {
+            // ... существующий код ...
+            
+            // Закрытие модальных окон каталога
+            document.querySelectorAll('.close-catalog-modal').forEach(function(closeBtn) {
+                closeBtn.addEventListener('click', function() {
+                    const modal = this.closest('.catalog-modal');
+                    modal.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                });
+            });
+            
+            // Закрытие по клику вне модального окна каталога
+            document.querySelectorAll('.catalog-modal').forEach(function(modal) {
+                modal.addEventListener('click', function(e) {
+                    if (e.target === this) {
+                        this.style.display = 'none';
+                        document.body.style.overflow = 'auto';
+                    }
+                });
+            });
+            
+            // Добавляем курсор pointer на все карточки каталога
+            document.querySelectorAll('.catalog-item').forEach(function(item) {
+                item.style.cursor = 'pointer';
+            });
+            
+            // Закрытие по Escape (работает для всех модальных окон)
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') {
+                    // Закрываем все модальные окна
+                    document.querySelectorAll('.modal, .catalog-modal').forEach(function(modal) {
+                        modal.style.display = 'none';
+                        document.body.style.overflow = 'auto';
+                    });
+                }
+            });
+        });
+    </script>
+
+        <!-- Модальные окна для каталога товаров -->
+    <div id="catalog-modals">
+        <!-- Памятники -->
+        <div class="catalog-modal" id="catalog-monuments">
+            <div class="catalog-modal-content">
+                <span class="close-catalog-modal">&times;</span>
+                <h2>Памятники</h2>
+                
+                <div class="catalog-description">
+                    <p>Предлагаем памятники из гранита, мрамора и других материалов различных форм и размеров.</p>
+                </div>
+                
+                <div class="catalog-items-grid">
+                    <!-- Гранитные памятники -->
+                    <div class="catalog-product">
+                        <div class="product-image">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <div class="product-info">
+                            <h3>Гранитные памятники</h3>
+                            <p class="product-price">от 25 000 руб.</p>
+                            <p class="product-desc">Прочные, долговечные, устойчивые к погодным условиям</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Мраморные памятники -->
+                    <div class="catalog-product">
+                        <div class="product-image">
+                            <i class="fas fa-mountain"></i>
+                        </div>
+                        <div class="product-info">
+                            <h3>Мраморные памятники</h3>
+                            <p class="product-price">от 40 000 руб.</p>
+                            <p class="product-desc">Элегантные, с красивой природной текстурой</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Двойные памятники -->
+                    <div class="catalog-product">
+                        <div class="product-image">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="product-info">
+                            <h3>Двойные памятники</h3>
+                            <p class="product-price">от 60 000 руб.</p>
+                            <p class="product-desc">Для семейных захоронений</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Памятники с портретом -->
+                    <div class="catalog-product">
+                        <div class="product-image">
+                            <i class="fas fa-portrait"></i>
+                        </div>
+                        <div class="product-info">
+                            <h3>С фотопортретом</h3>
+                            <p class="product-price">от 35 000 руб.</p>
+                            <p class="product-desc">С гравировкой или керамическим портретом</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="catalog-contact">
+                    <p><strong>Заказать или получить консультацию:</strong></p>
+                    <p>📞 8-908-115-33-26, 8-913-607-58-73</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ограды -->
+        <div class="catalog-modal" id="catalog-fences">
+            <div class="catalog-modal-content">
+                <span class="close-catalog-modal">&times;</span>
+                <h2>Ограды</h2>
+                
+                <div class="catalog-description">
+                    <p>Металлические, кованые и комбинированные ограды для благоустройства мест захоронения.</p>
+                </div>
+                
+                <div class="catalog-items-grid">
+                    <!-- Кованые ограды -->
+                    <div class="catalog-product">
+                        <div class="product-image">
+                            <i class="fas fa-hammer"></i>
+                        </div>
+                        <div class="product-info">
+                            <h3>Кованые ограды</h3>
+                            <p class="product-price">от 15 000 руб.</p>
+                            <p class="product-desc">Художественная ковка, индивидуальный дизайн</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Сварные ограды -->
+                    <div class="catalog-product">
+                        <div class="product-image">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div class="product-info">
+                            <h3>Сварные ограды</h3>
+                            <p class="product-price">от 8 000 руб.</p>
+                            <p class="product-desc">Прочные, стандартных размеров</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Ограды с элементами -->
+                    <div class="catalog-product">
+                        <div class="product-image">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="product-info">
+                            <h3>С декоративными элементами</h3>
+                            <p class="product-price">от 20 000 руб.</p>
+                            <p class="product-desc">С крестами, ангелами, цветами</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Комбинированные ограды -->
+                    <div class="catalog-product">
+                        <div class="product-image">
+                            <i class="fas fa-th-large"></i>
+                        </div>
+                        <div class="product-info">
+                            <h3>Комбинированные</h3>
+                            <p class="product-price">от 25 000 руб.</p>
+                            <p class="product-desc">Металл + гранит/мрамор</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="catalog-contact">
+                    <p><strong>Заказать или получить консультацию:</strong></p>
+                    <p>📞 8-908-115-33-26, 8-913-607-58-73</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Венки и цветы -->
+        <div class="catalog-modal" id="catalog-wreaths">
+            <div class="catalog-modal-content">
+                <span class="close-catalog-modal">&times;</span>
+                <h2>Венки и цветы</h2>
+                
+                <div class="catalog-description">
+                    <p>Искусственные и живые цветочные композиции для церемоний прощания.</p>
+                </div>
+                
+                <div class="catalog-items-grid">
+                    <!-- Искусственные венки -->
+                    <div class="catalog-product">
+                        <div class="product-image">
+                            <i class="fas fa-wreath"></i>
+                        </div>
+                        <div class="product-info">
+                            <h3>Искусственные венки</h3>
+                            <p class="product-price">от 1 500 руб.</p>
+                            <p class="product-desc">Различных размеров и цветов</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Живые цветы -->
+                    <div class="catalog-product">
+                        <div class="product-image">
+                            <i class="fas fa-spa"></i>
+                        </div>
+                        <div class="product-info">
+                            <h3>Живые цветы</h3>
+                            <p class="product-price">от 2 000 руб.</p>
+                            <p class="product-desc">Свежие букеты и композиции</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Траурные ленты -->
+                    <div class="catalog-product">
+                        <div class="product-image">
+                            <i class="fas fa-ribbon"></i>
+                        </div>
+                        <div class="product-info">
+                            <h3>Траурные ленты</h3>
+                            <p class="product-price">от 300 руб.</p>
+                            <p class="product-desc">С надписями, различной ширины</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Корзины с цветами -->
+                    <div class="catalog-product">
+                        <div class="product-image">
+                            <i class="fas fa-basketball-ball"></i>
+                        </div>
+                        <div class="product-info">
+                            <h3>Цветочные корзины</h3>
+                            <p class="product-price">от 3 000 руб.</p>
+                            <p class="product-desc">Большие композиции на подставках</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="catalog-contact">
+                    <p><strong>Заказать или получить консультацию:</strong></p>
+                    <p>📞 8-908-115-33-26, 8-913-607-58-73</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Гробы -->
+        <div class="catalog-modal" id="catalog-coffins">
+            <div class="catalog-modal-content">
+                <span class="close-catalog-modal">&times;</span>
+                <h2>Гробы</h2>
+                
+                <div class="catalog-description">
+                    <p>Гробы различных категорий: от экономичных до VIP-класса.</p>
+                </div>
+                
+                <div class="catalog-items-grid">
+                    <!-- Эконом класс -->
+                    <div class="catalog-product">
+                        <div class="product-image">
+                            <i class="fas fa-box-open"></i>
+                        </div>
+                        <div class="product-info">
+                            <h3>Эконом класс</h3>
+                            <p class="product-price">от 7 000 руб.</p>
+                            <p class="product-desc">Деревянные, простой конструкции</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Стандарт -->
+                    <div class="catalog-product">
+                        <div class="product-image">
+                            <i class="fas fa-box"></i>
+                        </div>
+                        <div class="product-info">
+                            <h3>Стандарт</h3>
+                            <p class="product-price">от 15 000 руб.</p>
+                            <p class="product-desc">С обивкой, металлической фурнитурой</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Премиум -->
+                    <div class="catalog-product">
+                        <div class="product-image">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <div class="product-info">
+                            <h3>Премиум</h3>
+                            <p class="product-price">от 25 000 руб.</p>
+                            <p class="product-desc">Из ценных пород дерева, с резьбой</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Цинковые -->
+                    <div class="catalog-product">
+                        <div class="product-image">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="product-info">
+                            <h3>Цинковые</h3>
+                            <p class="product-price">от 30 000 руб.</p>
+                            <p class="product-desc">Для транспортировки на дальние расстояния</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="catalog-contact">
+                    <p><strong>Заказать или получить консультацию:</strong></p>
+                    <p>📞 8-908-115-33-26, 8-913-607-58-73</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+           
+</body>
+</html>
